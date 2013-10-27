@@ -62,7 +62,7 @@ window.onload = (function() {
      */
     Crafty.c("Board", {
         /* The list of colors used for the game */
-        COLORS: ["#F00", "#0F0", "#FF0", "#F0F"],
+        COLORS: ["#2ecc71", "#3498db", "#e74c3c", "#9b59b6"],
         /**
          * Initialisation. Adds components, sets positions, creates the board
          */
@@ -72,7 +72,7 @@ window.onload = (function() {
             this.y = BOARD_TOP;
             this.w = BOX_WIDTH * BOARD_COLS;
             this.h = BOX_HEIGHT * BOARD_ROWS;
-            this.color("#000");
+            this.color("#7f8c8d");
             this._setupBoard(BOARD_LEFT, BOARD_TOP, BOARD_ROWS, BOARD_COLS, BOX_WIDTH, BOX_HEIGHT);
 
             score = 0;
@@ -85,7 +85,7 @@ window.onload = (function() {
                                        w: this.w - this.scoreLabel.w, h: 32})
                                 .font(FONT)
                                 .align("right")
-                                .color("#000")
+                                .color("#7f8c8d")
                                 .text(score);
         },
         /**
