@@ -1,5 +1,5 @@
 window.onload = (function() {
-    var WIDTH = 800,
+    var WIDTH = 700,
         HEIGHT = 640,
         BOX_WIDTH = 32,
         BOX_HEIGHT = 32,
@@ -219,7 +219,7 @@ window.onload = (function() {
             vcenter = BOARD_TOP + height / 2,
             bg = Crafty.e("2D, Canvas, Color, Mouse")
                 .attr({x: BOARD_LEFT, y: BOARD_TOP, w: width, h: height})
-                .color("#000");
+                .color("#7f8c8d");
 
         Crafty.e("2D, Canvas, SpriteText")
                         .attr({x: BOARD_LEFT, y: vcenter - 90, w: width, h: 32})
