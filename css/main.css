@@ -14,11 +14,11 @@ body {
     font-size: 1em;
     line-height: 1.4;
 }
-
+/*
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
-}
+}*/
 
 ::selection {
     background: #b3d4fc;
@@ -106,7 +106,7 @@ body {
 
 /* ==============
     MOBILE: Menu
-   ============== */
+   ============== *//*
 
 nav ul {
     margin: 0;
@@ -125,7 +125,7 @@ nav a {
     color: white;
     background: #e44d26;
 }
-
+*/
 nav a:hover,
 nav a:visited {
     color: white;
@@ -184,7 +184,71 @@ h1 {
     color: #000; }
 }
 
+li {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s; }
 
+li:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ace; }
+
+.github {
+  background: url("../img/github.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  float: right;
+   }
+
+.twitter {
+  background: url("../img/twitter.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  float: left; }
+
+.mail {
+  background: url("../img/mail.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  float: left; }
+
+
+.dotsb {
+        
+        -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+        -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+        box-shadow:inset 0px 39px 0px -24px #e67a73;        
+        background-color:#e4685d;        
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;        
+        border:1px solid #ffffff;
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:15px;
+        font-weight:normal;
+        padding:6px 15px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #b23e35;}
+.dotsb:hover {
+        
+        background-color:#eb675e;
+    }
+.dotsb:active {
+        position:relative;
+        top:1px;
+    }
 
 
 
@@ -240,7 +304,7 @@ h1 {
 
 /* ====================
     WIDE: CSS3 Effects
-   ==================== */
+   ==================== *//*
 
     .header-container,
     .main aside {
@@ -248,7 +312,7 @@ h1 {
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
     }
-
+*/
 /* ============
     WIDE: Menu
    ============ */
@@ -395,7 +459,7 @@ text-align: center;
     thead {
         display: table-header-group; /* h5bp.com/t */
     }
-
+/*
     tr,
     img {
         page-break-inside: avoid;
@@ -403,7 +467,7 @@ text-align: center;
 
     img {
         max-width: 100% !important;
-    }
+    }*/
 
     @page {
         margin: 0.5cm;
