@@ -11,7 +11,6 @@ textarea {
 }
 
 body {
-    background:#EDE9DF url(img/topbg.png) top repeat-x fixed;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -71,7 +70,9 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    /*font: 16px/26px Helvetica, Helvetica Neue, Arial;*/
+    font-family: 'Joti One', cursive;
+    font-weight: 16px/26px; 
 }
 
 .wrapper {
@@ -167,7 +168,21 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+h1 {
+    font-size: 132px;
+  font-weight: lighter;
+  text-shadow: 0 1px 0px rgba(255, 255, 255, 0.2);
+  margin-top: -35px;
+  margin-bottom: -27px; }
+  h1 .deepurple {
+    color: #260026; }
+  h1 .plum {
+    color: #440044; }
+  h1 .nails {
+    color: #84009D; }
+  h1 .black {
+    color: #000; }
+}
 
 
 
