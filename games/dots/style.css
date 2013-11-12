@@ -1,0 +1,37 @@
+body {
+	margin:0;
+	padding:0;
+	background:#EDE9DF url(../../img/topbg.png) top repeat-x fixed;
+    font-family: "Open Sans",sans-serif;
+	font-size:13px;
+	}
+
+.pro_cover {
+	float: right;
+	width:300px;
+	min-height:600px;
+	background:#fff url(../../img/cover.png) top center no-repeat;
+	margin: 0 auto 0;
+	text-align:center;
+	border-radius: 10px 0 0 10px;
+	}
+	.pro_cover .name {
+		font-size:30px;
+		color:#fff;
+		margin:10px 0;
+		}
+	.pro_cover .tw-name {
+		color:#eee;
+		font-size: 15px;
+		font-style: italic;
+		font-weight: 600;
+		margin: 0 0 10px;
+		}
+	.pro_dp {
+		border: 8px solid #fff;
+		border-radius:50%;
+		box-shadow: 0 0 7px #898989;
+    	margin: 1% 24% 5%;
+    	width: 150px;
+		}
+

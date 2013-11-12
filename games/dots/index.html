@@ -1,0 +1,56 @@
+
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Minimal Game Developed With Crafty.js">
+
+        <!--<link rel="shortcut icon" href="../../img/Dots.png">-->
+        
+        <link rel="shortcut icon" href="http://faviconist.com/icons/a89c3081d40671d246bc0351142042ff/favicon.ico" />
+
+        <title>Dots Game</title>
+
+
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="../../css/hideshare.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+        <script src="../../lib/crafty/latest/crafty.js" type="text/javascript"></script>
+        <script src="../../lib/underscore-min.js" type="text/javascript"></script>
+        <script src="../../spriteText/spriteText.js" type="text/javascript"></script>
+        <script src="samegame.js" type="text/javascript"></script>
+        
+            <style>
+                #cr-stage { border-left-width:0; border-top-width:0} /* IE9 Canvas Fix */
+            </style>
+
+    </head>
+    <body>
+        
+        <div class="pro_cover">
+            <img src="../../img/avatar.jpg" class="pro_dp" />
+            <span class="name">Dots Game</span>
+            <p class="tw-name">Select Level</p>
+            <h3 style="color:white">Easy
+                Medium
+                Hard</h3>
+
+            <a class="share" href="#">share me</a>
+                <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+                <script src="../../js/hideshare.min.js"></script>
+                <script>
+                $(document).ready(function() {
+                    $(".share").hideshare({
+                        link: "",           // Link to URL defaults to document.URL
+                        title: "",          // Title for social post defaults to document.title
+                        media: "",          // Link to image file defaults to null
+                        position: "bottom",
+                        linkedin: false
+                    });
+                });
+                </script>
+        </div>
+
+    </body>
+</html>
