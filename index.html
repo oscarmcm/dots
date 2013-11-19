@@ -13,8 +13,7 @@
 
         <meta name="description" content="Minimal Games Developed With HTML5">
         <meta name="author" content="Oscar Cortez" />
-        <meta name="viewport" content="width=device-width">
-        
+        <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
         <!-- popdown -->
         <link rel="stylesheet" href="css/jquery.popdown.css">
         <!--<link rel="stylesheet" href="css/normalize.min.css">
@@ -32,8 +31,13 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
 
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!--<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+        -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+        
+        
         <script type="text/javascript">
             $(function() {
                 var $menu = $('nav#menu'),
@@ -83,39 +87,44 @@
             <div id="sh" class="main-container">
             <div class="main wrapper clearfix">-->
 
-            <div id="sh" class="content">
-                
+            <div id="sh" class="main-container">
+                <div id="content" class="main wrapper clearfix">
                     <h1>Gamer
                     <span class="deepurple">Zone</span>
                     <span class="plum">HTML5</span></h1>  
-                
+                </div>
+
                 <a href="info.html" class="popdown dotsb" title="Play Now!">Play Now!</a>
+
             </div>
 
             <div id="footer" class="mm-fixed-bottom">
                     <h3>Enjoy</h3>
             </div>
             <nav id="menu">
-                <ul>
-                    <li>
-                        <li class="Selected">
-                            <a href="onepage.html">One page scrolling example</a>
-                            <ul>
-                                <li><a href="#content">Introduction</a></li>
-                                <li><a href="#first">First section</a></li>
-                                <li><a href="#second">Second section</a></li>
-                                <li><a href="#third">Third section</a></li>
-                            </ul>
-                        </li>
-                    </li>
-                </ul>
+                
+                    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'gamerzones'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+                
             </nav>
         </div> 
         
-    </body>
 
-    <footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+        
         
         <!--menu popdown-->
         <script type="text/javascript" src="js/jquery.popdown.js" /></script> 
@@ -133,7 +142,19 @@
                 })(jQuery);
                 </script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
         <script src="js/main.js"></script>
-    </footer>
+
+         <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'gamerzones'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    </body>
 </html>

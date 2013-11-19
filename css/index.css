@@ -1,3 +1,27 @@
+.wrapper {
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
 h1 {
     font-size: 132px;
   font-weight: lighter;
