@@ -1,0 +1,36 @@
+{
+    "name": "jquery-popdown",
+    "title": "jQuery Popdown",
+    "description": "A super simple jQuery popdown plugin ",
+    "keywords": [
+        "dialog",
+        "modal",
+        "popup",
+        "popdown"
+    ],
+    "version": "0.8.0",
+    "author": {
+        "name": "Wixel",
+        "url": "http://wixelhq.com"
+    },
+    "maintainers": [
+        {
+            "name": "Sean Nieuwoudt",
+            "email": "sean@wixelhq.com",
+            "url": "http://wixelhq.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+			"url": "https://github.com/Wixel/jquery-popdown/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/Wixel/jquery-popdown/issues",
+    "homepage": "http://wixel.github.io/jquery-popdown",
+    "docs": "https://github.com/Wixel/jquery-popdown",
+    "download": "https://github.com/Wixel/jquery-popdown",
+	"dependencies": {
+		"jquery": ">=1.10"
+	}
+}
