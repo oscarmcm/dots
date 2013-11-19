@@ -11,58 +11,118 @@
 
         <title>Home-Game Zone</title>
 
-        <meta name="description" content="Minimal Game Developed With Crafty.js">
-
+        <meta name="description" content="Minimal Games Developed With HTML5">
+        <meta name="author" content="Oscar Cortez" />
         <meta name="viewport" content="width=device-width">
+        
+        <!-- popdown -->
+        <link rel="stylesheet" href="css/jquery.popdown.css">
+        <!--<link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">-->
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- hideshare -->
         <link rel="stylesheet" href="css/hideshare.css">
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Joti+One' type='text/css'>
+        
+        <!-- menu -->
+        <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+        <link type="text/css" rel="stylesheet" href="css/menu.css" />
+
+        <!-- main -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
 
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                var $menu = $('nav#menu'),
+                    $html = $('html, body');
+
+                $menu.mmenu();
+                $menu.find( 'li > a' ).on(
+                    'click',
+                    function()
+                    {
+                        var href = $(this).attr( 'href' );
+
+                        //  if the clicked link is linked to an anchor, scroll the page to that anchor 
+                        if ( href.slice( 0, 1 ) == '#' )
+                        {
+                            $menu.one(
+                                'closed.mm',
+                                function()
+                                {
+                                    setTimeout(
+                                        function()
+                                        {
+                                            $html.animate({
+                                                scrollTop: $( href ).offset().top
+                                            }); 
+                                        }, 10
+                                    );  
+                                }
+                            );                      
+                        }
+                    }
+                );
+            });
+        </script>
 
         </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title"></h1>
-                <nav>
-                    <ul>
-                        <a href="http://bit.ly/1au9DJt"><li class='twitter'></li></a>
-                        <li class='github'><a href="http://bit.ly/H5Om1K"></a></li>
-                        <li class='mail'><a></a></li>
-                    </ul>
-                </nav>
-
-            </header>
-        </div>
-
-        <div id="sh" class="main-container">
-            <div class="main wrapper clearfix">
-                <h1>Multiples
-                <span class="deepurple">GAMES</span>
-                <span class="plum">In HTML5</span></h1>
-                <button href="#" class="dotsb">Play Now!</button>
+        <div id="page">
+            <div id="header" class="mm-fixed-top">
+                    <a href="#menu"></a>
+                    Dots
             </div>
 
+            <div id="sh" class="">
+                <div id="intro">
+                    <h1>Gamer
+                    <span class="deepurple">Zone</span>
+                    <span class="plum">HTML5</span></h1>  
+                </div>
+                <a href="info.html" class="popdown dotsb" title="Play Now!">Play Now!</a>
+            </div>
 
-
-        </div>
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                
-            </footer>
+            <div id="footer" class="mm-fixed-bottom">
+                    <h3>Enjoy</h3>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <li class="Selected">
+                            <a href="onepage.html">One page scrolling example</a>
+                            <ul>
+                                <li><a href="#content">Introduction</a></li>
+                                <li><a href="#first">First section</a></li>
+                                <li><a href="#second">Second section</a></li>
+                                <li><a href="#third">Third section</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </nav>
         </div> 
+        
     </body>
 
     <footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
+        <!--menu popdown-->
+        <script type="text/javascript" src="js/jquery.popdown.js" /></script> 
+    
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.popdown').popdown();
+                });
+                </script>
+        <!--background-->
         <script src="js/shards.js"></script>
 
                 <script>
